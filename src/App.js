@@ -1,22 +1,24 @@
 import Navbar from "./components/Navbar/Navbar";
 import { BrowserRouter } from 'react-router-dom'
 import ImageSlider from "./components/Slider/Slider";
+import MainBox from "./components/MainBox/MainBox";
 
 function App() {
   const images = [
-    'https://i.pinimg.com/736x/2a/94/9c/2a949c68ab617b2f96875ae10008d861.jpg',
-    'https://i.pinimg.com/236x/91/dc/18/91dc187f0d6fef1ffb8f4b6789aaed3f.jpg',
-    'https://i.pinimg.com/236x/70/d2/a5/70d2a5bfb09edcb66b7507e1a3e199ec.jpg',
-    'https://i.pinimg.com/236x/77/e5/7e/77e57e5a09caf5d188cfbf02502154c6.jpg',
-    'https://i.pinimg.com/564x/c1/94/42/c19442aca0a78f09d3c9bfbd9c7d8801.jpg',
-    'https://i.pinimg.com/236x/b6/8a/79/b68a797dac99ff9828c08c0adebbcc34.jpg',
-    'https://i.pinimg.com/236x/8e/ee/8a/8eee8a15abe32b1316206b4d98413040.jpg',
+    'https://i.pinimg.com/564x/de/c8/68/dec8688655c6f4fa6c076654d546ee53.jpg',
+    'https://i.pinimg.com/564x/16/88/1f/16881f87f86e2fc69a04c6d51dcdb366.jpg',
+    'https://i.pinimg.com/564x/21/26/93/2126934b6ec0e3f6dd4cdef0f4ccb941.jpg',
+    'https://i.pinimg.com/564x/41/5b/58/415b5825c4d43d8318603cf75113fefe.jpg',
+    'https://i.pinimg.com/564x/19/fd/e3/19fde32cf31a592eab72b88c8d0a38c7.jpg',
+    'https://i.pinimg.com/564x/36/15/79/361579863c5d1041495045fb83a3c0c5.jpg',
+    'https://i.pinimg.com/564x/6f/e9/7e/6fe97eb77744923b7430b9cb1b878a0e.jpg',
     // Add more image URLs as needed
   ];
   return (
     <BrowserRouter>
       <Navbar />
       <ImageSlider images={images} />
+      <MainBox/>
     </BrowserRouter>
   );
 }

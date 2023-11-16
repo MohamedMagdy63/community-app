@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Slider.css'; // You can create a CSS file for styling
+import { FaRegArrowAltCircleLeft , FaRegArrowAltCircleRight} from "react-icons/fa";
 
 const Slider = ({ images }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -18,11 +19,11 @@ const Slider = ({ images }) => {
     <div className="image-slider">
       <div className="slider-container">
         <button className="prev" onClick={prevSlide}>
-          <img src="https://image.flaticon.com/icons/png/512/271/271228.png" alt="Previous" />
+          <FaRegArrowAltCircleLeft />
         </button>
         <img src={images[currentImageIndex]} alt={`Slide ${currentImageIndex}`} />
         <button className="next" onClick={nextSlide}>
-          <img src="https://image.flaticon.com/icons/png/512/271/271220.png" alt="Next" />
+          <FaRegArrowAltCircleRight/>
         </button>
       </div>
     </div>

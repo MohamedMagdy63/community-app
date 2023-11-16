@@ -1,0 +1,40 @@
+.image-slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    background-color: antiquewhite;
+
+    margin: 0 auto;
+  }
+  
+  .slider-container {
+    position: relative;
+  }
+  
+  img {
+    width: 1000px;
+    height: 250px;
+    border: 3px solid #ffffff;
+    border-radius: 35px;
+    object-fit:contain;
+    background-color: antiquewhite;
+  }
+  
+  button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .prev {
+    left: 10px;
+  }
+  
+  .next {
+    right: 10px;
+  }
+  

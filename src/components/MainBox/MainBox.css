@@ -1,0 +1,37 @@
+.service-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .service-info {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .service-info h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .service-info p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.5;
+  }
+  
+  /* Include your ImageSlider.css styles here or import them */
+  
+  /* Example ImageSlider.css */
+  .image-slider {
+    /* Your styles */
+  }
+  
+  /* Your other ImageSlider styles */
+  

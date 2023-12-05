@@ -1,13 +1,18 @@
 import React from 'react';
-import './MainBox.css'; // You can create a CSS file for styling
+import Slider from '../Slider/Slider';
+import './MainBox.css'; // Create a CSS file for styling
 
-const MainBox = () => {
-
+const MainBox = ({ images, serviceName, description }) => {
   return (
-    <div className="container">
-hhh
+    <div className="service-box">
+      <div className="service-info">
+        <h2>{serviceName}</h2>
+        <p>{description}</p>
+      </div>
+      <Slider images={images} />
     </div>
   );
 };
 
 export default MainBox;
+
